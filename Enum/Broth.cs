@@ -1,4 +1,4 @@
-﻿namespace PhoStoreProject
+﻿namespace PhoStoreProject.Enum
 {
     internal enum Broth
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PhoStoreProject
+namespace PhoStoreProject.Enum
 {
     internal enum Meat
     {

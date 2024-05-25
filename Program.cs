@@ -1,14 +1,22 @@
-﻿namespace PhoStoreProject
+﻿using PhoStoreProject.Phos;
+using PhoStoreProject.PhoStores;
+using PhoStoreProject.PhoStores.Base;
+
+namespace PhoStoreProject
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            PhoStore store = new PhoStore();
-            store.OrderPho(nameof(PhoBo));
-            store.OrderPho(nameof(PhoGa));
-            store.OrderPho(nameof(PhoTron));
-            store.OrderPho("Pho Vit");
+            PhoStoreFactory phoHanoi = new PhoHanoiStore();
+            PhoStoreFactory phoNamDinh = new PhoNamDinhStore();
+            PhoStoreFactory phoSaigon = new PhoSaigonStore();
+            phoHanoi.OrderPho(nameof(PhoBoHanoi));
+            phoNamDinh.OrderPho(nameof(PhoBoNamDinh));
+            phoSaigon.OrderPho(nameof(PhoBoSaigon));
+            phoHanoi.OrderPho("Pho Vit");
+            phoNamDinh.OrderPho("Pho Cho");
+            phoSaigon.OrderPho("Pho Chim");
         }
     }
 }

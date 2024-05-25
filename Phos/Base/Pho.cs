@@ -1,4 +1,6 @@
-﻿namespace PhoStoreProject
+﻿using PhoStoreProject.Enum;
+
+namespace PhoStoreProject.Phos.Base
 {
     internal abstract class Pho
     {
